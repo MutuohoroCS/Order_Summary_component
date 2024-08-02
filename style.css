@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('./images/pattern-background-desktop.svg') no-repeat center center/cover;
+    font-family: "Red Hat Display", sans-serif;
+    height: 100vh;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+#orderSummary{
+    width: 600px;
+    height:;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 8px 102px hsl(224, 23%, 55%);
+}
+.imgTop{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.ordersummary-content{
+    padding: 20px;
+}
+.main-head{
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: hsl(223, 47%, 23%);
+}
+.description{
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+.paymentDetails{
+    display: flex;
+    background: hsl(225, 100%, 98%);
+    padding: 20px;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    /* - Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) */
+}
+.info-right{
+    display: flex;
+    padding: 10px;
+}
+.paymentDetails img{
+    margin-right: 8px;
+}
+.paymentDetails .bold-text{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.paymentDetails .pd-text{
+    padding-top:20px;
+    font-weight: 600;
+    color: hsl(223, 47%, 23%);
+    text-decoration: none;
+}
+.pd-text:hover{
+    
+    color: hsl(223, 90%, 65%);
+}
+.btn{
+    width: 100%;
+    padding: 16px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    color: #fff;
+    background: hsl(223, 100%, 52%);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 3px 10px 15px hsl(224, 23%, 55%);
+
+}
+.btn:hover{
+    background: hsl(223, 90%, 65%);
+    color: #fff;
+}
+.bottom-text{
+    text-align: center;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+.bottom-text:hover{
+    color: hsl(223, 47%, 23%);
+}
+@media screen and (max-width:375px){
+    body{
+        background: url('./images/pattern-background-mobile.svg') no-repeat center center/cover;
+        
+    }
+    .orderSummary{
+         max-width: 300px;
+    }
+}
